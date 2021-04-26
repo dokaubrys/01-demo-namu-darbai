@@ -21,13 +21,14 @@
                 padding: 15px;
             }
             section {
-                display: -webkit-flex;
+                box-sizing: border-box;
                 display: flex;
                 color: black;
+                text-align: center;
             }
             nav {
-                background-color: coral;
-                text-align: left;
+                
+                text-align: center;
                 padding: 10px;
             }
             article {
@@ -41,39 +42,47 @@
                 text-align: center;
                 padding: 10px;
             }
+            aside {
+                text-align: center;
+            }
+            .container {
+                max-width: 80%;
+                margin: auto;
+            }
         </style>
     </head>
 
     <body>
+        <div class='container'>
         <header>
-            <h1>Klaipėdos miestas</h1>
+            <h1>Flex layout struktura</h1>
         </header>
 
+        <nav>
+            <p>Flex layout struktura</p>
+        </nav>
+
         <section>
-            <nav>
-                <ul>
-                <li><a href='https://www.muziejus.lt/' target='_blank'> Lietuvos jūrų muziejus</a></li>
-                <li><a href='https://www.mlimuziejus.lt/lt/pilies-muziejus/' target='_blank'> Klaipėdos pilies muziejus</a></li>
-                <li><a href='https://www.makaliauslietuva.lt/ka-veikti-lietuvoje/klaipedoje-lankytinos-vietos/' target='_blank'> Klaipėdos lankomiausios vietos</a></li>
-                </ul>
-            </nav>
-            
-            <article>
-                <h2>Klaipėda</h2>
-                <p>Klaipėdos turizmas gerai žinomas, netik vietiniams Lietuviams, bet taip pat ir kitų šalių piliečiams.<br> 
-                   Klaipėda garsėja, ne tik savo paplūdimiais, Vokiečių architektūros pastatais, bet taip pat ir muziejais.<br>
-                   Vienas garsiausių ir vienintelis toks Lietuvoje - Klaipėdos jūrų muziejus, kuris leidžia iš arčiau pažinti Baltijos jūros gyventojų fauną.<br>
-                   <br>
-                   Dar vienas, ne prastesnis muziejus, tai Klaipėdos Pilies muziejus, kuris atskleidžia pajūrio gyventojų kasdienybę XIII-XIV amžiuje.<br>
-                   Na ir žinoma lankomiausios Klaipėdos vietos.
-                </p>
-            </article>
+                <aside style=' width: 33.33%;'><a href='https://www.muziejus.lt/' target='_blank'> Lietuvos jūrų muziejus</a></aside>
+                <aside style='width: 33.33%;'><a href='https://www.mlimuziejus.lt/lt/pilies-muziejus/' target='_blank'> Klaipėdos pilies muziejus</a></aside>
+                <aside style='width: 33.33%;'><a href='https://www.makaliauslietuva.lt/ka-veikti-lietuvoje/klaipedoje-lankytinos-vietos/' target='_blank'> Klaipėdos lankomiausios vietos</a></aside> 
+        </section>
+        
+        <section>
+                <aside style='width: 50%;'><p>Tekstas flex layoute</p></aside>
+                <aside style='width: 50%;'><p>Tekstas flex layoute</p></aside>
         </section>
 
-        <footer>
-            <p>Paraštė</p>
-        </footer>
+        <section>
+            <aside style='width: 25%;'><a href='https://stackoverflow.com/questions/11996257/the-character-encoding-of-the-html-document-was-not-declared' target='_blank'>Sutvarkyti bug'a</a></aside>
+            <aside style='width: 25%;'><a href='https://www.w3schools.com/cssref/pr_grid-column.asp' target='_blank'>CSS column</a></aside>
+            <aside style='width: 25%;'><a href='https://www.youtube.com/watch?v=FqxHMZAdYS8' target='_blank'>Studio setup by Saytek</a></aside>
+            <aside style='width: 25%;'><a href='https://soundcloud.com/discover' target='_blank'>Soundcloud</a></aside>
+    </section>
+           
+            
+           
         
-    
+        </div>
     </body>
 </html>
