@@ -8,9 +8,7 @@
             * {
                 box-sizing: border-box;
             }
-        
-            
-            
+
             .col-1 {width: 8.33%;}
             .col-2 {width: 16.66%;}
             .col-3 {width: 25%;}
@@ -24,25 +22,39 @@
             .col-11 {width: 91.66%;}
             .col-12 {width: 100%;}
             
-            [class*="col-"] {
-                float: left;
-                padding: 15px;
-                border: 5px green;
-            }
+            
 
             html {
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
             .header {
-                background-color: coral;
-                color: black;
-                padding: 50px;   
+                  
                 text-align: center;
             }
-            .container {
-                max-width: 80%;
-                margin: auto;
-            }    
+            [class*="col-"] {
+            float: left;
+            padding: 15px;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            }
+            
+
+                @media all and (max-width: 720px) {
+                    .flex-container {
+                        flex-flow: column wrap;
+                    }
+                    [class*="col"] {
+                        width: 100%;
+                    }                    
+            }
+            
+            .col-12 {
+                background-color: cadetblue;
+            }
+           
+            
+              
         </style>
 
     </head>
@@ -54,34 +66,52 @@
             </div>
 
             <div class='row'>
-                <div class='col-12 menu' style='text-align: center;'>
-                    <h2>Grid struktura</h2>
+                <div class='col-12'>
+                    <h2><p>Electronic musicians looking to move away from the laptop or add hardware instruments 
+                        to their live performances will at some 
+                        point consider obtaining a mixer.</p></h2>
                 </div>    
             </div> 
+            
+            <div class= 'row'>
+                <div class='col-6' style='background-color: chocolate;'>
+                    <p>send signals al effects units, and also control various channels' 
+                    volume from a central hub, amongst other things. 
+                    While the live sound engineer is responsible <br> for the larger sonic picture, the minutiae
+                    of sound is best left to the performer's discretion.</p>
+                    <div class='col-12' style='background-color: chocolate;'></div>
+                    <div class='col-12' style='background-color: chocolate;'></div>
+                    <div class='col-12' style='background-color: chocolate;'></div>
+                    <div class='col-12' style='background-color: chocolate;'></div>
+                    <div class='col-12' style='background-color: chocolate;'></div>
+                
+                </div>
+                <div class='col-6' style='background-color: coral;'>
+                    <img src='https://images.static-thomann.de/pics/bdb/457192/14236958_800.jpg' alt='Antras paveiksliukas' width='500' height='250'></div>
+            </div>
 
-            <div class='row' style='text-align: center;'>
-                <div class='col-4'><a href='https://www.roland.com/global/products/rc_7x7-tr8/' target='_blank'> Roland.com</a></div>
+            <div class='row'>
+                <div class='col-8' style='background-color: darkgoldenrod;'>
+                    <img src='https://i.pinimg.com/originals/be/ab/da/beabda37b9086238527f1449468e7d72.jpg' alt='Trecias paveiksliukas' width='500'
+                    height="250">
                     
-                <div class='col-4'><a href='https://www.canva.com/learn/404-page-design/' target='_blank'> 404 Error</a></div>
-                    
-                <div class='col-4'><a href='https://soundium.lt/?SID=9ge31ccbuts8qis6bnrut225cj' target='_blank'> Soundium</a></div>                
+                </div> 
+                <div class='col-4' style='background-color: darkolivegreen;'>
+                    <p>Stulpelis</p><br>
+                    <p>Stulpelis</p><br>
+                    <p>Stulpelis</p><br>
+                    <p>Stulpelis</p><br>
+                </div>                  
             </div>
             
-            <div class= 'row' style='text-align: center;'>
-                <div class='col-6'><p>Linkai i saitus</p></div>
-                <div class='col-6'><p>Kontaktai</p></div>
-            </div>
-
-            </div>    
-            <div class='row' style='text-align: center;'>
-                <div class='col-3'><a href='https://stackoverflow.com/questions/11996257/the-character-encoding-of-the-html-document-was-not-declared' target='_blank'>Sutvarkyti bug'a</a></div>
-                <div class='col-3'><a href='https://www.w3schools.com/cssref/pr_grid-column.asp' target='_blank'>CSS column</a></div>
-                <div class='col-3'><a href='https://www.youtube.com/watch?v=FqxHMZAdYS8' target='_blank'>Studio setup by Saytek</a></div>
-                <div class='col-3'><a href='https://soundcloud.com/discover' target='_blank'>Soundcloud</a></div>
+            <div class='row'>
+                <div class='col-4' style='background-color: darkslategrey;'><a href='https:/soundium.lt'>"Soundium" muzikos prekiu parduotuve</a></div>
+                <div class='col-4' style='background-color: brown;'><a href='https:/tamsta.lt'>"Tamsta" kiek kitokia muzikos prekiu parduotuve</a></div>
+                <div class='col-4' style='background-color: orange;'><a href='https:/thomann.de'>"Thomann" uzsienio muzikos prekiu parduotuve</a></div>
             </div>    
            
     
         
-    </div>
+       </div>
     </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <title>Ketvirtoji uzduotis Idex flex</title>
+        <meta charset='utf-8'>
+        <meta name='viewpoint' content='width=device-width, initial scale=1'>
+        
+        <style>
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            .flex-item-1 {
+                width: 100%;
+                background-color: cadetblue;
+            }
+            .flex-item-2, .flex-item-3 {
+                width: 50%;
+            }
+            .flex-item-2 {
+                background-color: chocolate;
+            }
+            .flex-item-3 {
+                background-color: coral;
+            }
+            .flex-item-4 {
+                width: 70%;
+                background-color: darkgoldenrod;
+            }
+            .flex-item-5 {
+                width: 30%;
+                background-color: darkolivegreen;
+            }
+            .flex-item-6, .flex-item-7, .flex-item-8 {
+                width: 33.33%;
+            }
+            .flex-item-6 {
+                background-color: darkslategrey;
+            }
+            .flex-item-7 {
+                background-color: brown;
+            }
+            .flex-item-8 {
+                background-color: orange;
+            }
+            [class*="flex-item"] {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media all and (max-width: 720px) {
+                    .flex-container {
+                        flex-flow: column wrap;
+                    }
+                    [class*="flex-item"] {
+                        width: 100%;
+                    }                    
+            }
+            .header {
+                text-align: center;
+
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class='container'>
+            <div class=header>
+            <h1>Index Flex</h1>
+            </div>
+                <div class='flex-container'>
+                    <div class='flex-item-1'><p>Electronic musicians looking to move away from the laptop or add hardware instruments 
+                        to their live performances will at some 
+                        point consider obtaining a mixer.</p></div>
+                    <div class='flex-item-2'><p>send signals al effects units, and also control various channels' 
+                        volume from a central hub, amongst other things. 
+                        While the live sound engineer is responsible <br> for the larger sonic picture, the minutiae
+                        of sound is best left to the performer's discretion.</p></div>
+                    <div class='flex-item-3'><img src='https://images.static-thomann.de/pics/bdb/457192/14236958_800.jpg' alt='Antras paveiksliukas' width='500' height='250'></div>
+                    <div class='flex-item-4'><img src='https://i.pinimg.com/originals/be/ab/da/beabda37b9086238527f1449468e7d72.jpg' alt='Trecias paveiksliukas' width='500'
+                        height="250"></div>
+                    <div class='flex-item-5'>
+                        <p>Stulpelis</p><br>
+                        <p>Stulpelis</p><br>
+                        <p>Stulpelis</p><br>
+                        <p>Stulpelis</p><br>
+                    </div>
+                    <div class='flex-item-6'><a href='https:/soundium.lt'>"Soundium" muzikos prekiu parduotuve</a><br><p>Soundium</p></div>
+                    <div class='flex-item-7'><a href='https:/tamsta.lt'>"Tamsta" kiek kitokia muzikos prekiu parduotuve</a></div>
+                    <div class='flex-item-8'><a href='https:/thomann.de'>"Thomann" uzsienio muzikos prekiu parduotuve</a></div>
+                </div>
+        </div>
+        
+    </body>
+</html>
